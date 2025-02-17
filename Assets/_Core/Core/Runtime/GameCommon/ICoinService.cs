@@ -10,7 +10,7 @@ namespace Kelsey
         void ConsumeCoin(int amount, string placement);
         void AddCoin(int amount, string placement);
         int GetCurrentLevel();
-        void RegisterOnCoinChange(Action<float> onCoinChange);
-        void UnregisterOnCoinChange(Action<float> onCoinChange);
+        void RegisterOnCoinChange(Action<int> onCoinChange);
+        void UnregisterOnCoinChange(Action<int> onCoinChange);
     }
 }

@@ -10,7 +10,7 @@ namespace Kelsey.UGUI
 {
     public abstract class View : MonoBehaviour
     {
-        private const string ResourcePath = "UIs/View/";
+        private const string ResourcePath = "View/";
 
         [SerializeField] private InterfaceReference<ITransitionAnimation>[] enterAnimations;
         [SerializeField] private InterfaceReference<ITransitionAnimation>[] exitAnimations;
