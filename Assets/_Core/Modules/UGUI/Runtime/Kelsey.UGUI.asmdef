@@ -1,0 +1,32 @@
+{
+    "name": "Kelsey.UGUI",
+    "rootNamespace": "Kelsey.UGUI",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:f4987e703fed4be49ba4aaee10f21c3b",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:31f4d258122def948a73201bb6f5003e",
+        "GUID:ad5c6ebe3f04f7d4f8decdbcd1ecf333",
+        "GUID:d263cfcb6fe4c8e458b5530d29ee4d1f",
+        "GUID:76ccd20425a997e4fa7d12750eb80eb1",
+        "GUID:029c1c1b674aaae47a6841a0b89ad80e",
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e",
+        "GUID:15ad5338b6c79aa42867a6ebf1977b35",
+        "GUID:70d657f039fb4fb08d2da22faee2d2a6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.obvious.soap",
+            "expression": "",
+            "define": "KELSEY_SOAP"
+        }
+    ],
+    "noEngineReferences": false
+}

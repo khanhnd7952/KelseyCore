@@ -1,0 +1,13 @@
+{
+  "displayName": "Kelsey",
+  "name": "com.kelsey.core",
+  "unity": "6000.3.28",
+  "description": "My usefully tool for unity mobile development",
+  "keywords": [
+  ],
+  "version": "0.0.0",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0"
+  }
+}

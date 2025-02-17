@@ -1,0 +1,22 @@
+{
+    "name": "Kelsey",
+    "rootNamespace": "Kelsey",
+    "references": [
+        "GUID:60bfecf5cb232594891bc622f40d6bed"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.purchasing",
+            "expression": "",
+            "define": "KELSEY_UNITY_PURCHASING"
+        }
+    ],
+    "noEngineReferences": false
+}

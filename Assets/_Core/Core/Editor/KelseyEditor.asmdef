@@ -1,0 +1,16 @@
+{
+    "name": "KelseyEditor",
+    "rootNamespace": "KelseyEditor",
+    "references": [
+        "GUID:ad5c6ebe3f04f7d4f8decdbcd1ecf333"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

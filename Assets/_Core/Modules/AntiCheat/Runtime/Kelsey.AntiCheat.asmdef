@@ -1,0 +1,17 @@
+{
+    "name": "Kelsey.AntiCheat",
+    "rootNamespace": "Kelsey.AntiCheat",
+    "references": [
+        "GUID:ad5c6ebe3f04f7d4f8decdbcd1ecf333",
+        "GUID:76ccd20425a997e4fa7d12750eb80eb1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

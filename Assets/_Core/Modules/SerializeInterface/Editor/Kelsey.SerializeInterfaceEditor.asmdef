@@ -1,0 +1,16 @@
+{
+    "name": "Kelsey.SerializeInterfaceEditor",
+    "rootNamespace": "Kelsey.SerializeInterfaceEditor",
+    "references": [
+        "GUID:70d657f039fb4fb08d2da22faee2d2a6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
