@@ -3,9 +3,11 @@ using UnityEngine;
 
 namespace Kelsey
 {
-    [CreateAssetMenu(menuName = "Scriptable/scriptable_int_array", fileName = "scriptable_int_array")]
+    [CreateAssetMenu(menuName = BASE_PATH + FILE_NAME, fileName = FILE_NAME)]
     public class ScriptableIntArray : ScriptableVariable<int[]>
     {
+        private const string FILE_NAME = "scriptable_int_array";
+
         public override void ParseValue(string data)
         {
             try
@@ -22,6 +24,7 @@ namespace Kelsey
 
         protected override void SavePrefValue() => PlayerPrefs.SetString(prefKey, string.Join(",", Value));
 
-        protected override void LoadPrefValue() => ParseValue(PlayerPrefs.GetString(prefKey, string.Join(",", defaultValue)));
+        protected override void LoadPrefValue() =>
+            ParseValue(PlayerPrefs.GetString(prefKey, string.Join(",", defaultValue)));
     }
 }

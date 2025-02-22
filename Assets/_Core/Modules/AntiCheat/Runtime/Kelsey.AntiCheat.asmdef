@@ -3,7 +3,8 @@
     "rootNamespace": "Kelsey.AntiCheat",
     "references": [
         "GUID:ad5c6ebe3f04f7d4f8decdbcd1ecf333",
-        "GUID:76ccd20425a997e4fa7d12750eb80eb1"
+        "GUID:76ccd20425a997e4fa7d12750eb80eb1",
+        "GUID:d263cfcb6fe4c8e458b5530d29ee4d1f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
