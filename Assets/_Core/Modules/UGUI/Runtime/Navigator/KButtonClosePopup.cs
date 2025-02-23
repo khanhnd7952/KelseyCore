@@ -2,11 +2,12 @@
 {
     public class KButtonClosePopup : KButton
     {
-        private Popup _popup;
+        private PopupBase _popup;
 
-        private void Awake()
+        protected override void OnAwake()
         {
-            _popup = GetComponentInParent<Popup>();
+            base.OnAwake();
+            _popup = GetComponentInParent<PopupBase>();
         }
 
         protected override void OnClick()

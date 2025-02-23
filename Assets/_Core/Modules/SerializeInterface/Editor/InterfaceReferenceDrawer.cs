@@ -116,5 +116,5 @@ namespace Kelsey.SerializeInterfaceEditor
             InterfaceType = interfaceType;
         }
     }
-#endif
 }
+#endif

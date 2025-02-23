@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using Kelsey.Extension;
 using Kelsey.SerializeInterface;
 using Sirenix.OdinInspector;
+using Sisus.Init;
 using UnityEngine;
 
 namespace Kelsey.UGUI
@@ -31,9 +32,9 @@ namespace Kelsey.UGUI
         protected virtual UniTask Initialize() => UniTask.CompletedTask;
 
         List<UniTask> transitionTasks = new List<UniTask>();
-
         protected abstract ITransitionAnimation GetDefaultEnterTransitionAnimation();
         protected abstract ITransitionAnimation GetDefaultExitTransitionAnimation();
+
 
         [Button]
         public virtual async UniTask Enter()
@@ -52,7 +53,8 @@ namespace Kelsey.UGUI
             else
             {
                 var defaultEnterTransitionAnimation = GetDefaultEnterTransitionAnimation();
-                if (defaultEnterTransitionAnimation != null) transitionTasks.Add(PlayAnim(defaultEnterTransitionAnimation));
+                if (defaultEnterTransitionAnimation != null)
+                    transitionTasks.Add(PlayAnim(defaultEnterTransitionAnimation));
             }
 
             await UniTask.WhenAll(transitionTasks);
@@ -75,7 +77,8 @@ namespace Kelsey.UGUI
             else
             {
                 var defaultExitTransitionAnimation = GetDefaultExitTransitionAnimation();
-                if (defaultExitTransitionAnimation != null) transitionTasks.Add(PlayAnim(defaultExitTransitionAnimation));
+                if (defaultExitTransitionAnimation != null)
+                    transitionTasks.Add(PlayAnim(defaultExitTransitionAnimation));
             }
 
             await UniTask.WhenAll(transitionTasks);

@@ -11,7 +11,7 @@ namespace Kelsey.UGUI
     {
         Image _image;
         float _endAlpha;
-        Popup _popup;
+        PopupBase _popup;
 
         private void Awake()
         {
@@ -19,7 +19,7 @@ namespace Kelsey.UGUI
             _endAlpha = _image.color.a;
         }
 
-        public void AssignPopup(Popup popup)
+        public void AssignPopup(PopupBase popup)
         {
             _popup = popup;
         }
