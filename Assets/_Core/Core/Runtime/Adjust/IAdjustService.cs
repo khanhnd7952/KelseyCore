@@ -21,8 +21,7 @@ namespace Kelsey
         void TrackIapRevenue(PurchaseEventArgs purchaseEventArgs);
 #endif
 
-        void RegisterOnGetCampaign(UnityAction<string> action);
-
-        string GetCampaign();
+        void RegisterOnGetCampaign(UnityAction<EAdjustCampaign> action);
+        EAdjustCampaign GetCampaign();
     }
 }

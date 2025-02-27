@@ -2,6 +2,6 @@
 {
     public interface IAdjustTracking
     {
-        void TrackAdjustCampaign(string campaign);
+        void TrackAdjustCampaign(string campaignType);
     }
 }
