@@ -6,6 +6,7 @@ using Kelsey.SerializeInterface;
 using Sirenix.OdinInspector;
 using Sisus.Init;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Kelsey.UGUI
 {
@@ -15,6 +16,25 @@ namespace Kelsey.UGUI
 
         [SerializeField] private InterfaceReference<ITransitionAnimation>[] enterAnimations;
         [SerializeField] private InterfaceReference<ITransitionAnimation>[] exitAnimations;
+
+        CanvasGroup _canvasGroup;
+
+        CanvasGroup Group
+        {
+            get
+            {
+                if (_canvasGroup == null)
+                {
+                    _canvasGroup = GetComponent<CanvasGroup>();
+                    if (_canvasGroup == null)
+                    {
+                        _canvasGroup = gameObject.AddComponent<CanvasGroup>();
+                    }
+                }
+
+                return _canvasGroup;
+            }
+        }
 
         [ShowInInspector, ReadOnly] protected bool IsAnimating { get; private set; }
         [ShowInInspector, ReadOnly] protected bool IsShowing { get; private set; }
@@ -40,6 +60,7 @@ namespace Kelsey.UGUI
         public virtual async UniTask Enter()
         {
             if (IsAnimating) return;
+            Group.blocksRaycasts = false;
             IsShowing = true;
             IsAnimating = true;
             transitionTasks.Clear();
@@ -59,12 +80,14 @@ namespace Kelsey.UGUI
 
             await UniTask.WhenAll(transitionTasks);
             IsAnimating = false;
+            Group.blocksRaycasts = true;
         }
 
         [Button]
         public virtual async UniTask Exit()
         {
             if (IsAnimating) return;
+            Group.blocksRaycasts = false;
             IsAnimating = true;
             transitionTasks.Clear();
             if (!exitAnimations.KIsNullOrMT())
