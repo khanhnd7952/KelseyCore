@@ -36,7 +36,7 @@ namespace Kelsey.UGUI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            _popup.OnBackdropClick();
+            if (_popup != null) _popup.OnBackdropClick();
         }
     }
 }
